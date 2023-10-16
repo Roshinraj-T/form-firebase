@@ -29,8 +29,8 @@
           console.log(item);
           html+=
             `<tr>
-                <td>${item.email}</td>
-                <td>${item.name}</td> 
+                <td>${item.name}</td>
+                <td>${item.email}</td> 
                 <td>${item.number}</td>
             </tr>`
       }
