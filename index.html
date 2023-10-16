@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
-<script src="./script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="form">
@@ -21,7 +21,7 @@
             <label for="number">Number:</label>
             <input  id="number" name="number">
             
-            <button onclick="insertData()">Submit</button>
+            <button type="button" id="addDataButton">Submit</button>
         </form>
     </div>
     
@@ -31,7 +31,7 @@
           <tr>
             <th>Name</th>
             <th>Email</th>
-            <th>Actions</th>
+            <th>Number</th>
           </tr>
         </thead>
         <tbody id="data" class="datatable" >         
